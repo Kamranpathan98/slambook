@@ -9,7 +9,7 @@
 
 .home,
 .reports,
-.products {
+.slambook {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -22,10 +22,26 @@
 /* Navbar CSS */
 .navbar {
   background-color: #ffffff;
-  height: 80px;
+  border: 2px solid #000;
+  height: 65px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.nav-header {
+  background: none;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 9px;
+}
+
+.logo-text {
+  font-size: 40px;
+  margin-bottom: 9px;
+  margin-left: 65px;
+  font-family: cursive;
+  cursor: pointer;
 }
 
 .menu-bars {

@@ -3,16 +3,14 @@ import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
   Outlet,
-  createRoutesFromElements,
+  // createRoutesFromElements,
 } from "react-router-dom";
-import Products from "./routes/Products";
 import Home from "./routes/Home";
 import Reports from "./routes/Reports";
 import Navbar from "./components/Navbar";
 import "./App.css";
+import SlamBook from "./routes/slambook";
 
 const AppLayout = () => (
   <>
@@ -31,6 +29,7 @@ const AppLayout = () => (
 //   )
 // );
 
+
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
@@ -40,8 +39,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "products",
-        element: <Products />,
+        path: "slambook",
+        element: <SlamBook />,
       },
       {
         path: "reports",
